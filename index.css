@@ -1,6 +1,6 @@
 body{
     background-image: url("index-background.png");
-    background-repeat: repeat-y;
+    background-repeat: repeat-x;
     display: flex;
     justify-content: center;
 }
