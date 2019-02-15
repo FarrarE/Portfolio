@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(75, 78, 122);
+    display: flex;
+    justify-content: center;
+}
+
+#git-link{
+    position: fixed;
+    top:5rem;
+    right:10rem;
+}
+
+#body{
+    margin-top:1rem;
+    width:75rem;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+}
+
+.header{
+    font-family: consolas;
+    font-size: 2rem;
+    text-align: center;
+}
