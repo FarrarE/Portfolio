@@ -11,11 +11,16 @@ body{
     right:10rem;
 }
 
-#body{
+#content{
     margin-top:1rem;
     width:75rem;
     background-color:white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#body{
+    margin:auto;
+    width: 60%;
 }
 
 .header{
