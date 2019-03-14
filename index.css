@@ -48,8 +48,9 @@ body{
     display: inline-block;
     overflow: hidden;
     position: relative;
-    border:solid;
-    border-weight:1;
+    border:solid black;
+    background-color: rgb(66, 66, 66);
+    color:white;
 }
 
 .thumbnail {
@@ -65,4 +66,8 @@ body{
 .thumbnail iframe {
   opacity: 0;
   transition: all 300ms ease-in-out;
+}
+
+.thumbnail-container h3{
+
 }
