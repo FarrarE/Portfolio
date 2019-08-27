@@ -1,52 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Ezra Farrar</title>
-    <link rel="stylesheet" type="text/css" href="index.css">.
-</head>
+    <head>
+        <title>Ezra Farrar</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-<body>
-    <a href="https://github.com/FarrarE" id="git-link">
-        <img src="git-icon.png">
-    </a>
 
-    <div id="content">
- 
-        <header class="header">
-            <h1>Welcome to,</h1>
-            <h3>Ezra Farrar's web-development portfolio</h3>
-        </header>
-        
-        <div id="body">     
-            <p>
-            Hello, my name is Ezra Farrar and I am an aspiring web developer. You have stumbled upon my project portfolio,
-            where I keep some of my best work as I strive to learn and grow as a developer, exploring different technologies and 
-            adding them to my small but ever expanding tool-kit.
-            </p>
+
+
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Group Projects</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div id="slide1" class="slide">
+            <h1>Ezra Farrar</h1>
         </div>
-        <div id="project-list">
-            <hr>
+        <div id="slide2" class="slide">
+                Hello, my name is Ezra Farrar and I am an aspiring web developer. 
+                You have stumbled upon my project portfolio, 
+                where I keep some of my best work as I strive to learn and grow as a developer, 
+                exploring different technologies and adding them to my small but ever expanding tool-kit.
+        </div>
+        <div id="slide3" class="slide">
+            <h2>Projects</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'DMScreen')">DMScreen</button>
+                <button class="tablinks" onclick="openCity(event, '5ECS')">5E Character Sheet</button>
+                <button class="tablinks" onclick="openCity(event, 'Calc')">Hypergeometric Calculator</button>
+            </div>
 
-            <div class="thumbnail-container">
-                <h3>5eCharacter Sheet</h3>
-                <div class="thumbnail">
-                    <iframe src="https://farrare.github.io/5eCharacterSheet/" frameborder="0" scrolling="no" onload="this.style.opacity = 1"></iframe>
+            <div id="DMScreen" class="tabcontent">
+                <p> 
+                    DMScreen is a web app tool for Dungeons Masters to track important information about 
+                    the game they are playing. This version is being designed specifically for Dungeon 
+                    and Dragons 5th Edition and is open source to allow others to adapt it for other 
+                    editions.
+                </p>
+
+                <div class="button-group" style="width:100%">
+                    <form action="https://github.com/FarrarE/DMScreen">
+                        <button type="submit">View Repository</button>
+                    </form>
+                    <form action="">
+                        <button type="submit">View Deployment</button>
+                    </form>
+                </div>
+
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+
+            </div>
+                
+            <div id="5ECS" class="tabcontent">
+                <p>
+                    A digital charactersheet for Dungeons and Dragons 5th Edition.
+                </p>
+
+                <div class="button-group" style="width:100%">
+                    <form action="https://github.com/FarrarE/5eCharacterSheet">
+                        <button type="submit">View Repository</button>
+                    </form>
+                    <form action="https://farrare.github.io/5eCharacterSheet/">
+                        <button type="submit">View Deployment</button>
+                    </form>
+                </div>
+
+                <i class="devicon-bootstrap-plain colored"></i> 
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+
+            </div>
+                
+            <div id="Calc" class="tabcontent">
+                <p>To Be Announced.</p>
+
+                <div class="button-group" style="width:100%">
+                        <button>View Repository</button>
+                        <button >View Deployment</button>
                 </div>
             </div>
-            <div class="thumbnail-container">
-                <h3>Dice Roller</h3>
-                <div class="thumbnail">
-                    <iframe src="https://farrare.github.io/dice-roller/" frameborder="0" scrolling="no" onload="this.style.opacity = 1"></iframe>
-                </div>
-            </div>
-                                     
-            <hr>
+
         </div>
+        <div id="slide4" class="slide">
+            Group Projects
+        </div>
+        <div id="slide4=5" class="slide">
+            Contact
+        </div>
+    </body>
 
-        <footer></footer>
-
-            
-    </div>
-
-</body>
+    <script>
+        function openCity(evt, tab) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tab).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </html>
