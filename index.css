@@ -10,6 +10,7 @@ html, body{
     text-align: center;
     font-size:25px;
     color: white;
+    scroll-snap-type: y mandatory;
 }
 
 ul {
@@ -61,6 +62,8 @@ nav{
 
 .slide{
     min-height: 100%;
+
+    scroll-snap-align: center;
 }
 
 /* ID */
