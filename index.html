@@ -41,21 +41,17 @@
 
             <div id="DMScreen" class="tabcontent">
                 <h3>DMScreen</h3>
-                <p> DMScreen is a web app tool for Dungeons Masters to track important information about 
+                <p> 
+                    DMScreen is a web app tool for Dungeons Masters to track important information about 
                     the game they are playing. This version is being designed specifically for Dungeon 
                     and Dragons 5th Edition and is open source to allow others to adapt it for other 
                     editions.
                 </p>
-                <table class="button-group" style="width:100%">
-                    <tr>
-                      <th>
-                        <button>View Repo</button>
-                      </th>
-                      <th>
-                        <button >View Reployment</button>
-                      </th> 
-                    </tr>
-                </table>
+
+                <div class="button-group" style="width:100%">
+                        <button>View Repository</button>
+                        <button >View Deployment</button>
+                </div>
 
                 <i class="devicon-react-original-wordmark colored"></i>
                 <i class="devicon-nodejs-plain-wordmark colored"></i>
@@ -65,14 +61,28 @@
                 
             <div id="5ECS" class="tabcontent">
                 <h3>5E Character Sheet</h3>
-                <p>A digital charactersheet for Dungeons and Dragons 5th Edition.</p>
+                <p>
+                    A digital charactersheet for Dungeons and Dragons 5th Edition.
+                </p>
+
+                <div class="button-group" style="width:100%">
+                        <button>View Repository</button>
+                        <button >View Deployment</button>
+                </div>
+
                 <i class="devicon-bootstrap-plain colored"></i> 
                 <i class="devicon-jquery-plain-wordmark colored"></i>
+
             </div>
                 
             <div id="Calc" class="tabcontent">
                 <h3>Hypergeometric Calculator</h3>
                 <p>To Be Announced.</p>
+
+                <div class="button-group" style="width:100%">
+                        <button>View Repository</button>
+                        <button >View Deployment</button>
+                </div>
             </div>
 
         </div>
@@ -82,12 +92,10 @@
         <div id="slide4=5" class="slide">
             Contact
         </div>
-
-
     </body>
 
     <script>
-        function openCity(evt, cityName) {
+        function openCity(evt, tab) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -97,7 +105,7 @@
             for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(cityName).style.display = "block";
+            document.getElementById(tab).style.display = "block";
             evt.currentTarget.className += " active";
         }
     </script>
