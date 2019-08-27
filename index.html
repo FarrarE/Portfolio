@@ -3,17 +3,21 @@
     <head>
         <title>Ezra Farrar</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-
-
-
     </head>
 
     <body>
 
         <div class="contact">
             <a href="https://github.com/FarrarE"><i class="devicon-github-plain-wordmark"></i></a>
+        </div>
+
+        <div class="nav">
+            <div class="pip"></div>
+            <div class="pip"></div>
+            <div class="pip"></div>
+            <div class="pip"></div>
         </div>
 
         <div id="slide1" class="slide">
@@ -153,20 +157,4 @@
         </div>
 
     </body>
-
-    <script>
-        function openCity(evt, tab) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tab).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
 </html>

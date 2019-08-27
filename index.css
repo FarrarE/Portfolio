@@ -14,6 +14,10 @@ html, body{
     scroll-snap-type: y mandatory;
 }
 
+body{
+    padding:10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -109,6 +113,25 @@ i{
     from { transform: translate(0,  0px); }
     40%  { transform: translate(0, 25px); }
     to   { transform: translate(0, 0px); }    
+}
+
+.nav{
+
+    position:absolute;
+    right:2.5%;
+    top:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:60px;
+}
+
+.pip{
+    display:none;
+    border:solid 1px;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
 }
 
 /* ID */
