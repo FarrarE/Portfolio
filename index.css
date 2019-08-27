@@ -1,11 +1,15 @@
 /* Tags */
 
+html{
+    background-image: url("index-background.png");
+    background-attachment: fixed;
+}
+
 body{
     display: flex;
     flex-flow: column;
     text-align: center;
     font-family: sans-serif;
-    background-image: url("index-background.png");
     font-size:25px;
     color: white;
     scroll-snap-type: y mandatory;
