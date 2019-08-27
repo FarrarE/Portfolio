@@ -13,7 +13,7 @@ body{
     font-size:25px;
     color: white;
     scroll-snap-type: y mandatory;
-    padding:0px 10px;
+    padding:0px 50px;
 }
 
 ul {
@@ -155,7 +155,6 @@ i{
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    padding:20px;
 }
 
 #slide3{
