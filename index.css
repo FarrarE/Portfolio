@@ -1,8 +1,15 @@
+/* Tags */
+
 html, body{
+    background-image: url("index-background.png");
+    background-repeat: repeat-x;
     display: flex;
     height:100%;
+    overflow-x: hidden;
     flex-flow: column;
     text-align: center;
+    font-size:25px;
+    color: white;
 }
 
 ul {
@@ -19,27 +26,64 @@ nav{
     display:none;
 }
 
-.slide{
-    width: 100%;
-    height:100%;
-    min-height: 100%;
-    background-color:white;
+/* Classes */
+
+.tab {
+    overflow: hidden;
+  }
+  
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color:white;
 }
 
+.tab button:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.tab button.active {
+    background-color: rgb(116, 116, 116);
+}
+
+.tabcontent {
+    display: none;
+    height:100%;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.slide{
+    min-height: 100%;
+}
+
+/* ID */
+
 #slide1{
-    background-color:pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #slide2{
-    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
 }
 
 #slide3{
-    background-color:green;
+
 }
 
 #slide4{
-    background-color:grey;
+
 }
 
 

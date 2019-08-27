@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Ezra Farrar</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-</head>
+    <head>
+        <title>Ezra Farrar</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
 
-<body>
+    <body>
 
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Group Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Group Projects</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
 
-    <div id="slide1" class="slide">
-        Home
-    </div>
-    <div id="slide2" class="slide">
-        About Me
-    </div>
-    <div id="slide3" class="slide">
-        Projects
-    </div>
-    <div id="slide4" class="slide">
-        Group Projects
-    </div>
-    <div id="slide4=5" class="slide">
-        Contact
-    </div>
+        <div id="slide1" class="slide">
+            <h1>Ezra Farrar</h1>
+        </div>
+        <div id="slide2" class="slide">
+                Hello, my name is Ezra Farrar and I am an aspiring web developer. 
+                You have stumbled upon my project portfolio, 
+                where I keep some of my best work as I strive to learn and grow as a developer, 
+                exploring different technologies and adding them to my small but ever expanding tool-kit.
+        </div>
+        <div id="slide3" class="slide">
+            Projects
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'DMScreen')">DMScreen</button>
+                <button class="tablinks" onclick="openCity(event, '5ECS')">5E Character Sheet</button>
+                <button class="tablinks" onclick="openCity(event, 'Calc')">Hypergeometric Calculator</button>
+            </div>
+
+            <div id="DMScreen" class="tabcontent">
+                <h3>DMScreen</h3>
+                <p> DMScreen is a web app tool for Dungeons Masters to track important information about 
+                    the game they are playing. This version is being designed specifically for Dungeon 
+                    and Dragons 5th Edition and is open source to allow others to adapt it for other 
+                    editions.
+                </p>
+            </div>
+                
+            <div id="5ECS" class="tabcontent">
+                <h3>5E Character Sheet</h3>
+                <p>A digital charactersheet for Dungeons and Dragons 5th Edition.</p> 
+            </div>
+                
+            <div id="Calc" class="tabcontent">
+                <h3>Hypergeometric Calculator</h3>
+                <p>To Be Announced.</p>
+            </div>
+
+        </div>
+        <div id="slide4" class="slide">
+            Group Projects
+        </div>
+        <div id="slide4=5" class="slide">
+            Contact
+        </div>
 
 
-</body>
+    </body>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </html>
