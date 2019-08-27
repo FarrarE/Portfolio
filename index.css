@@ -27,6 +27,7 @@ li {
 nav{
     display:none;
 }
+
 i{
     font-size:75px;
 }
@@ -113,9 +114,7 @@ i{
 
 }
 
-#slide4{
-
+img{
+    width:75px;
+    height:75px;
 }
-
-
-
