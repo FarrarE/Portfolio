@@ -24,19 +24,21 @@ li {
     display: inline;
 }
 
-nav{
-    display:none;
-}
-
 i{
     font-size:75px;
 }
 
 /* Classes */
 
+.contact{
+    position: absolute;
+    top:2.5%;
+    right:2.5%;
+}
+
 .tab {
     overflow: hidden;
-  }
+}
   
 .tab button {
     background-color: inherit;
@@ -94,11 +96,26 @@ i{
     top: -5px;
 }
 
+.floating {  
+    font-size: 50px;
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    40%  { transform: translate(0, 25px); }
+    to   { transform: translate(0, 0px); }    
+}
 
 /* ID */
 
 #slide1{
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
 }
