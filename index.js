@@ -28,12 +28,32 @@ function moveToSlide(e, slide) {
 
 // shows the nav bar once the user begins to scroll
 window.addEventListener('scroll', function(e) {
-      let nav = document.getElementById("nav");
-      let y = window.scrollY;
+    let nav = document.getElementById("nav");
+    let y = window.scrollY;
+    let height = document.documentElement.clientHeight;
+    if( y >= 100){
+        nav.className = "nav show";
+        document.getElementById("pip1").className = "pip active";
 
-      if (y >= 300) {
-          nav.className = "nav show"
-      } else {
-          nav.className = "nav hide"
-      }
+        if (y >= height) {
+            document.getElementById("pip2").className = "pip active";
+            document.getElementById("pip1").className = "pip";
+            document.getElementById("pip3").className = "pip";
+            document.getElementById("pip4").className = "pip";
+        }
+        if (y >= 2 * height) {
+            document.getElementById("pip3").className = "pip active";
+            document.getElementById("pip1").className = "pip";
+            document.getElementById("pip2").className = "pip";
+            document.getElementById("pip4").className = "pip";
+        }
+        if (y >= 3 * height) {
+            document.getElementById("pip4").className = "pip active";
+            document.getElementById("pip1").className = "pip";
+            document.getElementById("pip3").className = "pip";
+            document.getElementById("pip2").className = "pip";
+        }
+    } else {
+        nav.className = "nav hide";
+    }
 });

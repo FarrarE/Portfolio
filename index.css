@@ -58,6 +58,10 @@ i{
     height:10px;
 }
 
+.active{
+    background-color: white;
+}
+
 .hide {
     opacity:0;
 }
