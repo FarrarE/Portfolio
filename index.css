@@ -1,6 +1,7 @@
 /* Tags */
 
 html, body{
+    font-family: sans-serif;
     background-image: url("index-background.png");
     background-repeat: repeat-x;
     display: flex;
@@ -25,6 +26,9 @@ li {
 
 nav{
     display:none;
+}
+i{
+    font-size:75px;
 }
 
 /* Classes */
@@ -64,6 +68,10 @@ nav{
     min-height: 100%;
 
     scroll-snap-align: center;
+}
+
+.button-group{
+    width:50px;
 }
 
 /* ID */
