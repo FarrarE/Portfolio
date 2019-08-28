@@ -168,6 +168,14 @@ i{
 
 }
 
+#DMScreen{
+    display:block;
+}
+
+#PDX-Urban-Dash{
+    display:block;
+}
+
 img{
     width:75px;
     height:75px;
