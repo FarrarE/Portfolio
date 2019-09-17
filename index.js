@@ -35,18 +35,22 @@ window.addEventListener('scroll', function(e) {
     let nav = document.getElementById("nav");
     let y = window.scrollY;
     let height = document.documentElement.clientHeight;
-    if( y >= 100){
+    document.getElementById("contact").style.opacity = "0";
+
+    if( y >= height/2){
         nav.className = "nav show";
         document.getElementById("pip1").className = "pip active";
         document.getElementById("pip2").className = "pip";
         document.getElementById("pip3").className = "pip";
         document.getElementById("pip4").className = "pip";
+        document.getElementById("contact").style.opacity = "1";
 
         if (y >= height) {
             document.getElementById("pip2").className = "pip active";
             document.getElementById("pip1").className = "pip";
             document.getElementById("pip3").className = "pip";
             document.getElementById("pip4").className = "pip";
+
         }
         if (y >= 2 * height) {
             document.getElementById("pip3").className = "pip active";
