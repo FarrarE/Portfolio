@@ -1,7 +1,10 @@
-function changeTab(evt, tab) {
+function changeTab(evt, tab, content) {
     let i, tabcontent, tablinks;
 
-    tabcontent = document.getElementsByClassName("tabcontent");
+    if(content === 1)
+        tabcontent = document.getElementsByClassName("tabcontent");
+    else
+        tabcontent = document.getElementsByClassName("tabcontent2");
 
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -23,6 +26,7 @@ function moveToSlide(e, slide) {
     var slidePosition = slideOffset;
     window.scrollTo(0, slidePosition);
 }
+
 
 // Event Listeners
 

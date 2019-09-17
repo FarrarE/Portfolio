@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="index.css">
         <script type="text/javascript" src="index.js"></script>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     </head>
 
     <body>
@@ -24,25 +25,24 @@
         <div id="slide2" class="slide">
                 <h2>About Me</h2>
                 <p>
-                Hello, my name is Ezra Farrar and I am an aspiring web developer. 
+                Hello, my name is Ezra Farrar and I am an aspiring full-stack web developer. 
                 You have stumbled upon my project portfolio 
                 where I keep some of my best work as I strive to learn and grow as a developer, 
-                explore different technologies and add them to my small but ever expanding tool-kit.
+                explore different technologies, and add them to my small but ever expanding tool-kit.
                 </p>
         </div>
 
         <div id="slide3" class="slide">
             <h2>Projects</h2>
             <div class="tab">
-                <button class="tablinks active" onclick="changeTab(event, 'DMScreen')">DMScreen</button>
-                <button class="tablinks" onclick="changeTab(event, '5ECS')">5E Character Sheet</button>
-                <button class="tablinks" onclick="changeTab(event, 'Calc')">Hypergeometric Calculator</button>
+                <button class="tablinks active" onclick="changeTab(event, 'DMScreen', 1)">DMScreen</button>
+                <button class="tablinks" onclick="changeTab(event, '5ECS', 1)">5E Character Sheet</button>
             </div>
 
             <div id="DMScreen" class="tabcontent">
                 <p> 
                     DMScreen is a web app tool for Dungeons Masters to track important information about 
-                    the game they are playing. This version is being designed specifically for Dungeon 
+                    the game they are playing. This version has been designed specifically for Dungeon 
                     and Dragons 5th Edition and is open source to allow others to adapt it for other 
                     editions.
                 </p>
@@ -61,7 +61,7 @@
                 
             <div id="5ECS" class="tabcontent">
                 <p>
-                    A digital charactersheet for Dungeons and Dragons 5th Edition.
+                    A digital charactersheet for Dungeons and Dragons 5th Edition that stores the information in your local browser for later use.
                 </p>
 
                 <div class="button-group" style="width:100%">
@@ -77,30 +77,22 @@
                 <i class="devicon-jquery-plain-wordmark colored"></i>
 
             </div>
-                
-            <div id="Calc" class="tabcontent">
-                <p>To Be Announced.</p>
-
-                <div class="button-group" style="width:100%">
-                        <button>View Repository</button>
-                        <button >View Deployment</button>
-                </div>
-            </div>
 
         </div>
         <div id="slide4" class="slide">
             <h2>Group Projects</h2>
 
             <div class="tab">
-                <button class="tablinks active" onclick="changeTab(event, 'PDX-Urban-Dash')">PDX Urban Dash</button>
-                <button class="tablinks" onclick="changeTab(event, 'Pea Shooter')">Pea Shooter</button>
-                <button class="tablinks" onclick="changeTab(event, 'FTP Client')">FTP Client</button>
+                <button class="tablinks active" onclick="changeTab(event, 'PDX-Urban-Dash', 2)">PDX Urban Dash</button>
+                <button class="tablinks" onclick="changeTab(event, 'Pea Shooter', 2)">Pea Shooter</button>
+                <button class="tablinks" onclick="changeTab(event, 'FTP Client', 2)">FTP Client</button>
             </div>
 
 
-            <div id="PDX-Urban-Dash" class="tabcontent">
+            <div id="PDX-Urban-Dash" class="tabcontent2">
                 <p> 
-                    Capstone Project
+                    This is my group Capstone Project for the city of Portland. This dashboard is a proof of concept web application designed to display information and satistics
+                    gathered by the city. The intention was to make this public information more easily accesible to the residents of Portland.
                 </p>
 
                 <div class="button-group" style="width:100%">
@@ -119,7 +111,7 @@
 
             </div>
 
-            <div id="Pea Shooter" class="tabcontent">
+            <div id="Pea Shooter" class="tabcontent2">
                 <p> 
                     This is our Rust Project for CS410P. 
                     It is a topdown shooter where you have to survive as long as you 
@@ -136,7 +128,7 @@
 
             </div>
 
-            <div id="FTP Client" class="tabcontent">
+            <div id="FTP Client" class="tabcontent2">
                 <p> 
                     A console based FTP client built in C# using an Agile development cycle.
                 </p>

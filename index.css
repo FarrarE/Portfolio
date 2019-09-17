@@ -11,7 +11,7 @@ body{
     flex-flow: column;
     text-align: center;
     font-family: Courier New;
-    font-size:25px;
+    font-size:30px;
     color: white;
     scroll-snap-type: y mandatory;
     padding:0px 50px;
@@ -95,7 +95,7 @@ i{
     background-color: rgb(116, 116, 116);
 }
 
-.tabcontent {
+.tabcontent, .tabcontent2 {
     display: none;
     height:100%;
     padding: 6px 12px;
@@ -180,3 +180,9 @@ img{
     width:75px;
     height:75px;
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size:100px;
+    }
+  }
