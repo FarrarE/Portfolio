@@ -1,0 +1,76 @@
+// Color variables
+$color-one:#212121;
+$color-two:#323232;
+$color-three:#0d7377;
+$color-four:#14ffec;
+
+#projects{
+    color:$color-four;
+}
+
+.active{
+    background-color: white;
+}
+
+.hide {
+    opacity:0;
+}
+
+.show {
+    opacity:1;
+}
+
+.tab {
+    margin:5px;
+    text-align: center;
+
+    button{
+        background-color: inherit;
+        float: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color:white;
+    }
+    button:hover{
+        background-color: $color-three;
+    }
+    button.active{
+        background-color: $color-one;
+        color:$color-four
+    }
+}
+
+.tabcontent, .tabcontent2 {
+    display: none;
+    height:100%;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.button-group{
+    display:flex;
+    justify-content: center;
+    margin:10px 0px;
+
+    button{
+        position: relative;
+        background-color: inherit;
+        float: center;
+        border: solid;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        color:white;
+        margin:10px;
+        transition: top ease 1s;
+    }
+}
+
+.button-group button:hover {
+    box-shadow: 10px 10px grey;
+    top: -5px;
+}

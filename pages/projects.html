@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ezra Farrar's Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="../styles/nav/nav.css">
+        <link rel="stylesheet" type="text/css" href="../styles/projects/projects.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <script type="text/javascript" src="projects.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <nav>
+        <a id="about-me" href="about.html">About Me</a>
+        <a id="projects" href="projects.html">Projects</a>
+        <a id="contact" href="contact.html">Contact</a>
+    </nav>
+    <body>
+        <div class="tab">
+            <button class="tablinks" onclick="changeTab(event, 'mtgspellbook')">MTGSpellbook</button>
+            <button class="tablinks" onclick="changeTab(event, 'DMScreen')">DMScreen</button>
+            <button class="tablinks" onclick="changeTab(event, '5ECS')">5E Character Sheet</button>
+
+            </div>
+
+            <div id="mtgspellbook" class="tabcontent">
+                <p> 
+                    MTGSpellbook is a web app that allows users to store information about their Magic the Gathering collection. 
+                    Using AWS API gateways, it can store user information in DynamoDB and uses Cognito identity pools to authenticate user login and API requests.
+                </p>
+
+                <div class="button-group" style="width:100%">
+                    <form action="https://github.com/FarrarE/mtgspellbook" target="_blank">
+                        <button type="submit">View Repository</button>
+                    </form>
+                    <form action="https://prod.dv0y2bh0z5aj9.amplifyapp.com/" target="_blank">
+                        <button type="submit">View Deployment</button>
+                    </form>
+                </div>
+
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-webpack-plain"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+            </div>
+
+            <div id="DMScreen" class="tabcontent">
+                <p> 
+                    DMScreen is a web app tool for Dungeons Masters to track important information about 
+                    the game they are playing. This version has been designed specifically for Dungeon 
+                    and Dragons 5th Edition and is open source to allow others to adapt it for other 
+                    editions.
+                </p>
+
+                <div class="button-group" style="width:100%">
+                    <form action="https://github.com/FarrarE/DMScreen" target="_blank">
+                        <button type="submit">View Repository</button>
+                    </form>
+                </div>
+
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+
+            </div>
+                
+            <div id="5ECS" class="tabcontent">
+                <p>
+                    A digital charactersheet for Dungeons and Dragons 5th Edition that stores the information in your local browser for later use.
+                </p>
+
+                <div class="button-group" style="width:100%">
+                    <form action="https://github.com/FarrarE/5eCharacterSheet" target="_blank">
+                        <button type="submit">View Repository</button>
+                    </form>
+                    <form action="https://farrare.github.io/5eCharacterSheet/" target="_blank">
+                        <button type="submit">View Deployment</button>
+                    </form>
+                </div>
+
+                <i class="devicon-bootstrap-plain colored"></i> 
+                <i class="devicon-jquery-plain-wordmark colored"></i>
+            </div>
+        </div>
+    </body>
+</html>

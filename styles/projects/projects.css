@@ -1,0 +1,80 @@
+#projects {
+  color: #14ffec;
+}
+
+.active {
+  background-color: white;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.tab {
+  margin: 5px;
+  text-align: center;
+}
+
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+.tab button:hover {
+  background-color: #0d7377;
+}
+
+.tab button.active {
+  background-color: #212121;
+  color: #14ffec;
+}
+
+.tabcontent, .tabcontent2 {
+  display: none;
+  height: 100%;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0px;
+}
+
+.button-group button {
+  position: relative;
+  background-color: inherit;
+  float: center;
+  border: solid;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  color: white;
+  margin: 10px;
+  -webkit-transition: top ease 1s;
+  transition: top ease 1s;
+}
+
+.button-group button:hover {
+  -webkit-box-shadow: 10px 10px grey;
+          box-shadow: 10px 10px grey;
+  top: -5px;
+}
+/*# sourceMappingURL=projects.css.map */

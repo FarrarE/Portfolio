@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url(/home/urza/github/Portfolio/styles/colors/colors.css);
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #323232;
+}
+
+nav {
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: #212121;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  margin: 1rem;
+}
+/*# sourceMappingURL=nav.css.map */

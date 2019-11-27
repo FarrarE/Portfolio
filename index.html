@@ -1,174 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Ezra Farrar's Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="styles/nav/nav.css">
         <script type="text/javascript" src="index.js"></script>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
 
+    <nav>
+        <a href="./pages/about.html">About Me</a>
+        <a href="./pages/projects.html">Projects</a>
+        <a href="./pages/contact.html">Contact</a>
+    </nav>
     <body>
-
-        <div id="contact">
-
-            <a href="https://github.com/FarrarE?">
-                <i class="devicon-github-plain-wordmark"></i>
-            </a>    
-        </div>
-
-        <div id="nav" class="nav hide">
-            <div id="pip1" class="pip" onclick="moveToSlide(event, 'slide1')"></div>
-            <div id="pip2" class="pip" onclick="moveToSlide(event, 'slide2')"></div>
-            <div id="pip3" class="pip" onclick="moveToSlide(event, 'slide3')"></div>
-            <div id="pip4" class="pip" onclick="moveToSlide(event, 'slide4')"></div>
-        </div>
-
-        <div id="slide1" class="slide">
-            <h1>Ezra Farrar</h1>
-        </div>
-
-        <div id="slide2" class="slide">
-                <h2>About Me</h2>
-                <p>
-                Hello, my name is Ezra Farrar and I am an aspiring full-stack web developer. 
-                </p>
-        </div>
-
-        <div id="slide3" class="slide">
-            <h2>Projects</h2>
-            <div class="tab">
-                <button class="tablinks active" onclick="changeTab(event, 'mtgspellbook', 1)">MTGSpellbook</button>
-                <button class="tablinks" onclick="changeTab(event, 'DMScreen', 1)">DMScreen</button>
-                <button class="tablinks" onclick="changeTab(event, '5ECS', 1)">5E Character Sheetk</button>
-
-            </div>
-
-            <div id="mtgspellbook" class="tabcontent">
-                <p> 
-                    MTGSpellbook is a web app that allows users to store information about their Magic the Gathering collection. 
-                    Using AWS API gateways, it can store user information in DynamoDB and uses Cognito identity pools to authenticate user login and API requests.
-                </p>
-
-                <div class="button-group" style="width:100%">
-                    <form action="https://github.com/FarrarE/mtgspellbook" target="_blank">
-                        <button type="submit">View Repository</button>
-                    </form>
-                    <form action="https://prod.dv0y2bh0z5aj9.amplifyapp.com/" target="_blank">
-                        <button type="submit">View Deployment</button>
-                    </form>
-                </div>
-
-                <i class="devicon-react-original-wordmark colored"></i>
-                <i class="devicon-nodejs-plain-wordmark colored"></i>
-                <i class="devicon-bootstrap-plain colored"></i>
-                <i class="devicon-webpack-plain"></i>
-                <i class="devicon-amazonwebservices-plain-wordmark"></i>
-            </div>
-
-            <div id="DMScreen" class="tabcontent">
-                <p> 
-                    DMScreen is a web app tool for Dungeons Masters to track important information about 
-                    the game they are playing. This version has been designed specifically for Dungeon 
-                    and Dragons 5th Edition and is open source to allow others to adapt it for other 
-                    editions.
-                </p>
-
-                <div class="button-group" style="width:100%">
-                    <form action="https://github.com/FarrarE/DMScreen" target="_blank">
-                        <button type="submit">View Repository</button>
-                    </form>
-                </div>
-
-                <i class="devicon-react-original-wordmark colored"></i>
-                <i class="devicon-nodejs-plain-wordmark colored"></i>
-                <i class="devicon-bootstrap-plain colored"></i>
-
-            </div>
-                
-            <div id="5ECS" class="tabcontent">
-                <p>
-                    A digital charactersheet for Dungeons and Dragons 5th Edition that stores the information in your local browser for later use.
-                </p>
-
-                <div class="button-group" style="width:100%">
-                    <form action="https://github.com/FarrarE/5eCharacterSheet" target="_blank">
-                        <button type="submit">View Repository</button>
-                    </form>
-                    <form action="https://farrare.github.io/5eCharacterSheet/" target="_blank">
-                        <button type="submit">View Deployment</button>
-                    </form>
-                </div>
-
-                <i class="devicon-bootstrap-plain colored"></i> 
-                <i class="devicon-jquery-plain-wordmark colored"></i>
-
-            </div>
-
-        </div>
-        <div id="slide4" class="slide">
-            <h2>Group Projects</h2>
-
-            <div class="tab">
-                <button class="tablinks active" onclick="changeTab(event, 'PDX-Urban-Dash', 2)">PDX Urban Dash</button>
-                <button class="tablinks" onclick="changeTab(event, 'Pea Shooter', 2)">Pea Shooter</button>
-                <button class="tablinks" onclick="changeTab(event, 'FTP Client', 2)">FTP Client</button>
-            </div>
-
-
-            <div id="PDX-Urban-Dash" class="tabcontent2">
-                <p> 
-                    This is my group Capstone Project for the city of Portland. This dashboard is a proof of concept web application designed to display information and satistics
-                    gathered by the city. The intention was to make this public information more easily accesible to the residents of Portland.
-                </p>
-
-                <div class="button-group" style="width:100%">
-                    <form action="https://github.com/pdx-urban-dash/pdx-urban-dash" target="_blank">
-                        <button type="submit">View Repository</button>
-                    </form>
-                    <form action="https://pdx-urban-dash.github.io/" target="_blank">
-                        <button type="submit">View Website</button>
-                    </form>
-                </div>
-
-                <i class="devicon-react-original-wordmark colored"></i>
-                <i class="devicon-nodejs-plain-wordmark colored"></i>
-                <i class="devicon-bootstrap-plain colored"></i>
-                <img src="https://graphql.org/img/logo.svg">
-
-            </div>
-
-            <div id="Pea Shooter" class="tabcontent2">
-                <p> 
-                    This is our Rust Project for CS410P. 
-                    It is a topdown shooter where you have to survive as long as you 
-                    can against waves of enemies.
-                </p>
-
-                <div class="button-group" style="width:100%">
-                    <form action="https://github.com/FarrarE/RustProject" target="_blank">
-                        <button type="submit">View Repository</button>
-                    </form>
-                </div>
-
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/1200px-Rust_programming_language_black_logo.svg.png">
-
-            </div>
-
-            <div id="FTP Client" class="tabcontent2">
-                <p> 
-                    A console based FTP client built in C# using an Agile development cycle.
-                </p>
-
-                <div class="button-group" style="width:100%">
-                    <form action="https://github.com/cs410agile-group3/FTPClient" target="_blank">
-                        <button type="submit">View Repository</button>
-                    </form>
-                </div>
-
-                <i class="devicon-csharp-line-wordmark colored"></i>
-            </div>
-        </div>
-
+        <h1>Ezra Farrar</h1>
     </body>
 </html>
