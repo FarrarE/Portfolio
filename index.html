@@ -26,7 +26,6 @@
 
         <div id="slide1" class="slide">
             <h1>Ezra Farrar</h1>
-            <span class="floating" onclick="moveToSlide(event, 'slide2')">︾</span>
         </div>
 
         <div id="slide2" class="slide">
@@ -39,8 +38,32 @@
         <div id="slide3" class="slide">
             <h2>Projects</h2>
             <div class="tab">
-                <button class="tablinks active" onclick="changeTab(event, 'DMScreen', 1)">DMScreen</button>
-                <button class="tablinks" onclick="changeTab(event, '5ECS', 1)">5E Character Sheet</button>
+                <button class="tablinks active" onclick="changeTab(event, 'mtgspellbook', 1)">MTGSpellbook</button>
+                <button class="tablinks" onclick="changeTab(event, 'DMScreen', 1)">DMScreen</button>
+                <button class="tablinks" onclick="changeTab(event, '5ECS', 1)">5E Character Sheetk</button>
+
+            </div>
+
+            <div id="mtgspellbook" class="tabcontent">
+                <p> 
+                    MTGSpellbook is a web app that allows users to store information about their Magic the Gathering collection. 
+                    Using AWS API gateways, it can store user information in DynamoDB and uses Cognito identity pools to authenticate user login and API requests.
+                </p>
+
+                <div class="button-group" style="width:100%">
+                    <form action="https://github.com/FarrarE/mtgspellbook" target="_blank">
+                        <button type="submit">View Repository</button>
+                    </form>
+                    <form action="https://prod.dv0y2bh0z5aj9.amplifyapp.com/" target="_blank">
+                        <button type="submit">View Deployment</button>
+                    </form>
+                </div>
+
+                <i class="devicon-react-original-wordmark colored"></i>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-webpack-plain"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
             </div>
 
             <div id="DMScreen" class="tabcontent">
@@ -54,9 +77,6 @@
                 <div class="button-group" style="width:100%">
                     <form action="https://github.com/FarrarE/DMScreen" target="_blank">
                         <button type="submit">View Repository</button>
-                    </form>
-                    <form action="https://master.d1jxj4t1xhjkmj.amplifyapp.com/" target="_blank">
-                        <button type="submit">View Deployment</button>
                     </form>
                 </div>
 
@@ -148,7 +168,6 @@
 
                 <i class="devicon-csharp-line-wordmark colored"></i>
             </div>
-
         </div>
 
     </body>
