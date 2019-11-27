@@ -7,3 +7,44 @@ $color-four:#14ffec;
 #contact{
     color:$color-four;
 }
+
+body{
+    a{
+        color:inherit;
+        text-decoration: none;
+    }
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10rem;
+
+    .devicon-github-plain-wordmark{
+        color:white;
+        font-size: 5rem;
+    }
+    .LI-profile-badge{
+        display:block;
+        text-align: left;
+    }
+    .contact-item{
+        margin:1rem;
+    }
+}
+
+@media (max-width: 500px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:10rem;
+  }
+}
+
+
+
+
+

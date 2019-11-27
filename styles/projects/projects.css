@@ -15,7 +15,7 @@
 }
 
 .tab {
-  margin: 5px;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -24,11 +24,11 @@
   float: center;
   border: none;
   outline: none;
+  padding: 1rem;
   cursor: pointer;
-  padding: 14px 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1.2rem;
   color: white;
 }
 
@@ -41,11 +41,12 @@
   color: #14ffec;
 }
 
-.tabcontent, .tabcontent2 {
+.tabcontent {
   display: none;
-  height: 100%;
-  padding: 6px 12px;
-  border-top: none;
+  color: white;
+  text-align: center;
+  padding: 0 5rem;
+  font-size: 1.2rem;
 }
 
 .button-group {
@@ -64,10 +65,10 @@
   float: center;
   border: solid;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  font-size: 1rem;
+  padding: 1rem;
   color: white;
-  margin: 10px;
+  margin: .5rem;
   -webkit-transition: top ease 1s;
   transition: top ease 1s;
 }
@@ -77,5 +78,10 @@
   -webkit-box-shadow: 10px 10px #212121;
           box-shadow: 10px 10px #212121;
   top: -5px;
+}
+
+i {
+  font-size: 5rem;
+  margin: .5rem;
 }
 /*# sourceMappingURL=projects.css.map */
