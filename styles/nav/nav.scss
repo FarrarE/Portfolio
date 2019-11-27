@@ -8,7 +8,6 @@ $color-four:#14ffec;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import '../colors/colors.css';
 
 // SCSS
 html, body {
@@ -26,6 +25,7 @@ nav{
     font-family: "Open Sans";
     text-align: center;
     font-size: 2rem;
+    padding:1rem;
     color:white;
     background-color:$color-one;
 

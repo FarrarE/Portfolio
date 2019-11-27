@@ -68,9 +68,10 @@ $color-four:#14ffec;
         margin:10px;
         transition: top ease 1s;
     }
+    button:hover {
+        color: $color-four;
+        box-shadow: 10px 10px $color-one;
+        top: -5px;
+    }
 }
 
-.button-group button:hover {
-    box-shadow: 10px 10px grey;
-    top: -5px;
-}
