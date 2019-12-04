@@ -1,6 +1,6 @@
 /* Tags */
 html {
-  background-image: url("index-background.png");
+  background-color: #323232;
   background-attachment: fixed;
 }
 
@@ -73,7 +73,7 @@ i {
 }
 
 .active {
-  background-color: white;
+  background-color: #14ffec;
 }
 
 .hide {
@@ -85,7 +85,8 @@ i {
 }
 
 .tab {
-  overflow: hidden;
+  margin: 1rem;
+  text-align: center;
 }
 
 .tab button {
@@ -93,20 +94,21 @@ i {
   float: center;
   border: none;
   outline: none;
+  padding: 1rem;
   cursor: pointer;
-  padding: 14px 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 1.2rem;
   color: white;
 }
 
 .tab button:hover {
-  background-color: #464646;
+  background-color: #0d7377;
 }
 
 .tab button.active {
-  background-color: #747474;
+  background-color: #212121;
+  color: #14ffec;
 }
 
 .tabcontent, .tabcontent2 {
@@ -138,17 +140,18 @@ i {
   float: center;
   border: solid;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+  font-size: 1rem;
+  padding: 1rem;
   color: white;
-  margin: 10px;
+  margin: .5rem;
   -webkit-transition: top ease 1s;
   transition: top ease 1s;
 }
 
 .button-group button:hover {
-  -webkit-box-shadow: 10px 10px grey;
-          box-shadow: 10px 10px grey;
+  color: #14ffec;
+  -webkit-box-shadow: 10px 10px #212121;
+          box-shadow: 10px 10px #212121;
   top: -5px;
 }
 
