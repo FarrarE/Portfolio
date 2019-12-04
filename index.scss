@@ -153,16 +153,18 @@ i{
 
 #contact{
     position: fixed;
-    top: -1px;
-    right:-1px;
+    top: -.5rem;
+    right:-.5rem;
     opacity: 0;
-    font-weight: bold;
-    font-size:25     px;
-    border: solid 1px;
-    border-radius: 0 0 0 10px;
+    font-size:25px;
     padding:5px;
     transition: all 1s;
     background-image: url("index-background.png");
+    border: solid;
+    border-radius: 0 0 0 1rem;
+    a{
+        padding:.5rem;
+    }
 }
 
 #slide1{
