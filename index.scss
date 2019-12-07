@@ -8,7 +8,7 @@ $color-four:#14ffec;
 /* Tags */
 
 html{
-    background-color:$color-two;
+    background-color:$color-one;
     background-attachment: fixed;
 
 }
@@ -68,7 +68,7 @@ i{
 }
 
 .active{
-    background-color: $color-four;
+    background-color: $color-two;
 }
 
 .hide {
@@ -98,7 +98,7 @@ i{
         background-color: $color-three;
     }
     button.active{
-        background-color: $color-one;
+        background-color: $color-two;
         color:$color-four
     }
 }

@@ -1,6 +1,6 @@
 /* Tags */
 html {
-  background-color: #323232;
+  background-color: #212121;
   background-attachment: fixed;
 }
 
@@ -73,7 +73,7 @@ i {
 }
 
 .active {
-  background-color: #14ffec;
+  background-color: #323232;
 }
 
 .hide {
@@ -107,7 +107,7 @@ i {
 }
 
 .tab button.active {
-  background-color: #212121;
+  background-color: #323232;
   color: #14ffec;
 }
 
