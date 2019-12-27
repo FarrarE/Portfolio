@@ -1,15 +1,1 @@
-.content {
-  color: white;
-  height: 200px;
-  position: relative;
-}
-
-.content p {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-/*# sourceMappingURL=home.css.map */
+/* No CSS *//*# sourceMappingURL=home.css.map */

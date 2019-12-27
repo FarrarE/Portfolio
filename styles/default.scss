@@ -1,0 +1,27 @@
+// Color variables
+$color-one:#212121;
+$color-two:#323232;
+$color-three:#0d7377;
+$color-four:#14ffec;
+
+
+html{
+    color:white;
+    max-width: 100%;
+    height:100vh;
+    overflow-x: hidden;
+    background-color: $color-two;
+    text-align: center;
+    
+    a{
+        color:inherit;
+        text-decoration: none;
+    }
+}
+
+.portrait{
+    margin-top:5rem;
+    width:10rem;
+    height:10rem;
+    border-radius: 50%;
+}

@@ -9,21 +9,18 @@ $color-four:#14ffec;
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-// SCSS
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-    padding:0;
-    margin:0;
-    background-color: $color-two;
-}
+
 
 nav{
+    background-color: $color-two;
+    overflow: hidden;
+    position: fixed;
+    top:90vh;
+    width: 100%;  
     font-family: "Open Sans";
     text-align: center;
     font-size: 2rem;
-    padding:1rem;
-    color:white;
+    height:100%;
 
     a{
         color:inherit;

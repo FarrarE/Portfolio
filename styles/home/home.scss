@@ -1,15 +1,11 @@
+// Color variables
+$color-one:#212121;
+$color-two:#323232;
+$color-three:#0d7377;
+$color-four:#14ffec;
+
 .content {
 
-    color:white;
-    height: 200px;
-    position: relative;
 
-    p {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
 }
   
